@@ -39,11 +39,11 @@ function setup() {
 function draw() {
   background("#BDA297");
   
-  heading.html("Life: "+life)
+  heading.html("Vidas: "+life)
   heading.style('color:red'); 
   heading.position(150,20)
 
-  scoreboard.html("Score: "+score)
+  scoreboard.html("Puntuación: "+score)
   scoreboard.style('color:red'); 
   scoreboard.position(width-200,20)
 
@@ -132,13 +132,13 @@ function handleGameover(bubbleGroup){
       gameState=2
       
       swal({
-        title: `Game Over`,
-        text: "Oops you lost the game....!!!",
-        text: "Your Score is " + score,
+        title: `Fin del juego`,
+        text: "¡Ups perdiste el juego!",
+        text: "Tu puntuación es " + score,
         imageUrl:
           "https://cdn.shopify.com/s/files/1/1061/1924/products/Thumbs_Down_Sign_Emoji_Icon_ios10_grande.png",
         imageSize: "100x100",
-        confirmButtonText: "Thanks For Playing"
+        confirmButtonText: "Gracias por jugar"
       });
     }
   
